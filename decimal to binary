@@ -1,5 +1,5 @@
 class DecimalBinaryExample{
-     
+     //update
     public static void main(String a[]){
     	System.out.println("Binary representation of 124: ");
     	System.out.println(Integer.toBinaryString(124));
