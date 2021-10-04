@@ -1,0 +1,35 @@
+# what is the name of this image
+img_name = dataset.name
+print('Image filename: {n}\n'.format(n=img_name))
+
+# How many bands does this image have?
+num_bands = dataset.count
+print('Number of bands in image: {n}\n'.format(n=num_bands))
+
+# How many rows and columns?
+rows, cols = dataset.shape
+print('Image size is: {r} rows x {c} columns\n'.format(r=rows, c=cols))
+
+# Does the raster have a description or metadata?
+desc = dataset.descriptions
+metadata = dataset.meta
+
+print('Raster description: {desc}\n'.format(desc=desc))
+
+# What driver was used to open the raster?
+driver = dataset.driver
+print('Raster driver: {d}\n'.format(d=driver))
+
+# What is the raster's projection?
+proj = dataset.crs
+print('Image projection:')
+print(proj, '\n')
+
+# What is the raster's "geo-transform"
+gt = dataset.transform
+
+print('Image geo-transform:\n{gt}\n'.format(gt=gt))
+
+print('All raster metadata:')
+print(metadata)
+print('\n')
